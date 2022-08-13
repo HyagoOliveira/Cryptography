@@ -4,10 +4,12 @@
 * Unity minimum version: **2019.3**
 * Current version: **0.1.0**
 * License: **MIT**
+* Dependencies:
+    - [com.actioncode.async-io : 1.0.0](https://github.com/HyagoOliveira/Async-IO/tree/1.0.0)
 
 ## How To Use
 
-You can only to encrypt or decrypt strings using AES algorithm.
+You can only encrypt or decrypt strings using AES algorithm.
 
 ```csharp
 using UnityEngine;
@@ -20,9 +22,9 @@ public class Test : MonoBehaviour
     [ContextMenu("Run Test")]
     async void RunTest()
     {
-        // You can create a security key at https://randomkeygen.com/
-        var superSecurityKey = "IspwttyeNSQ9qWLouOoG6y1GnozZ9uEn";
-        var cryptographer = CryptographerFactory.Create(CryptographerType.AES, superSecurityKey);
+        // You can generate a security key at https://randomkeygen.com/
+        var key = "IspwttyeNSQ9qWLouOoG6y1GnozZ9uEn";
+        var cryptographer = CryptographerFactory.Create(CryptographerType.AES, key);
         var encrypted = await cryptographer.Encrypt(json.text);
         var decrypted = await cryptographer.Decrypt(encrypted);
 

@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.1.0] - 2022-01-01
 ### Added
+- Async-IO package 1.0.0
 - AES Cryptographer
 - CHANGELOG
 - Package file
@@ -16,5 +17,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - gitignore
 - Initial commit
 
-[Unreleased]: https://github.com/HyagoOliveira/Cryptography/compare/0.1.0...main
-[0.1.0]: https://github.com/HyagoOliveira/Cryptography/tree/0.1.0/
+[Unreleased]: https://github.com/HyagoOliveira/Cryptography/compare/1.0.0...main
+[1.0.0]: https://github.com/HyagoOliveira/Cryptography/tree/1.0.0/

@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace ActionCode.Persistence
+namespace ActionCode.Cryptography
 {
     /// <summary>
     /// Interface used on objects able to encrypt and decrypt strings.

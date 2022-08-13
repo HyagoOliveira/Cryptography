@@ -1,4 +1,4 @@
-namespace ActionCode.Persistence
+namespace ActionCode.Cryptography
 {
     public static class CryptographerFactory
     {

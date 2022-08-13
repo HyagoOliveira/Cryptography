@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
 
-namespace ActionCode.Persistence
+namespace ActionCode.Cryptography
 {
     /// <summary>
     /// Cryptographer class for strings using AES algorithm.

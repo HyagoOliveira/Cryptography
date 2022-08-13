@@ -3,12 +3,8 @@
   "displayName": "ActionCode-Cryptography",
   "version": "0.1.0",
   "unity": "2019.3",
-  "description": "This package contains [...].",
-  "keywords": [
-    "",
-    ""
-  ],
-  "dependencies": {},
+  "description": "This package contains Cryptography scripts.",
+  "keywords": [ "Cryptography" ],
   "license": "MIT",
   "homepage": "https://github.com/HyagoOliveira/Cryptography#readme",
   "repository": {

@@ -5,13 +5,32 @@
 * Current version: **0.1.0**
 * License: **MIT**
 
-## Summary
-
-[...]
-
 ## How To Use
 
-### Using [...]
+You can only to encrypt or decrypt strings using AES algorithm.
+
+```csharp
+using UnityEngine;
+using ActionCode.Cryptography;
+
+public class Test : MonoBehaviour
+{
+    public TextAsset json;
+
+    [ContextMenu("Run Test")]
+    async void RunTest()
+    {
+        // You can create a security key at https://randomkeygen.com/
+        var superSecurityKey = "IspwttyeNSQ9qWLouOoG6y1GnozZ9uEn";
+        var cryptographer = CryptographerFactory.Create(CryptographerType.AES, superSecurityKey);
+        var encrypted = await cryptographer.Encrypt(json.text);
+        var decrypted = await cryptographer.Decrypt(encrypted);
+
+        print(encrypted);
+        print(decrypted);
+    }
+}
+```
 
 ## Installation
 
